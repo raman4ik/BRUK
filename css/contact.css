@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 body {
 	background: #301238;
@@ -16,15 +16,13 @@ body {
 	padding: 3px;
 	background: rgb(133, 144, 3);
 }
-
 .grad {
 	color: #fff;
-	background: linear-gradient(45deg, black 50%, gold 50%);
-	background-clip: text ;
+	background: linear-gradient(300deg, black 50%, gold 50%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
 .gradD {
 	font-size: 20px;
 }
@@ -88,7 +86,6 @@ body {
 }
 
 @media (max-width: 991px) {
-
 	.header-top,
 	.header-top.sticky {
 		padding: 10px 20px;
@@ -182,7 +179,7 @@ section .contentBx .countdown {
 	display: flex;
 	margin: 20px 0;
 }
- 
+
 section .contentBx .countdown .time {
 	display: flex;
 	justify-content: center;
@@ -253,8 +250,6 @@ section .imgBx img {
 	}
 }
 
-
-
 /* bottom */
 footer {
 	position: relative;
@@ -290,7 +285,7 @@ footer .container h2 {
 }
 
 footer .container h2::before {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: -5px;
 	left: 0;

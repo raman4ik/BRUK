@@ -23,12 +23,11 @@ body {
 /*---Sticky---*/
 .grad {
     color: #fff;
-    background: linear-gradient(45deg, black 50%, gold 50%);
+    background: linear-gradient(300deg, black 50%, gold 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .gradD {
     font-size: 20px;
 }

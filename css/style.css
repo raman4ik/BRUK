@@ -203,8 +203,20 @@ p {
 		filter: invert(1);
 	}
 	.banner .content h2 {
-		font-size: 3em;
+		font-size: 3.4em;
 		color: rgb(238, 4, 4);
+	}
+	.banner .content p {
+		font-size: 1.3em;
+	}
+
+	.btn {
+		width: 120px;
+		height: 40px;
+	}
+
+	.btn span {
+		font-size: 13px;
 	}
 }
 
