@@ -92,6 +92,13 @@ body {
 }
 
 @media (max-width: 991px) {
+    .logo {
+        border: 4px solid rgb(180, 159, 40);
+        background: rgb(133, 144, 3);
+    }
+    .gradD {
+        font-size: 15px;
+    }
     .header-top,
     .header-top.sticky {
         padding: 10px 20px;
@@ -380,7 +387,7 @@ body {
 
 @media (max-width: 991px) {
     .banner .content h2 {
-        font-size: 36px;
+        font-size: 33px;
     }
 
     .about {
@@ -389,7 +396,7 @@ body {
     .about .contentAbout,
     .about .imageAbout {
         width: 100%;
-        padding: 50px;
+        padding: 40px;
         min-height: 400px;
         text-align: center;
     }
@@ -403,6 +410,10 @@ body {
         padding: 50px;
         min-height: 400px;
         text-align: center;
+    }
+
+    .weOffer .imageOffer {
+        display: none;
     }
 
     .services {
@@ -438,6 +449,14 @@ body {
         font-size: 24px;
         list-style: none;
         margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .service__info li {
+        font-size: 18px;
+        list-style: none;
+        margin-bottom: 20px;
     }
 }
 /*---Footer---*/

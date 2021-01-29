@@ -110,6 +110,13 @@ header .navigation li a:hover {
 }
 
 @media (max-width: 991px) {
+	.logo {
+		border: 4px solid rgb(180, 159, 40);
+		background: rgb(133, 144, 3);
+	}
+	.gradD {
+		font-size: 15px;
+	}
 	header,
 	header.sticky {
 		padding: 10px 20px;
