@@ -192,7 +192,8 @@ header .navigation li a:hover {
 	position: relative;
 	width: 800px;
 	height: 500px;
-	background: #fff;
+	background-image: url(../img/template.webp);
+	background-size: cover;
 }
 
 .container__image .clip {
@@ -234,42 +235,97 @@ header .navigation li a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 }
 
-.advantages__content {
-	display: flex;
-	flex-direction: row;
-	margin: 20px;
-	padding-top: 50px;
-	flex-wrap: wrap;
-}
-
-.card__image {
-	border: 5px solid black;
-	background-color: gold;
-	border-radius: 50%;
-	min-height: 155px;
-	transition: 0.5s;
-}
-
-.card__image:hover {
-	opacity: 0.5;
-}
-
-.card__image img {
+.advantages {
 	position: relative;
-	width: 150px;
-	padding: 15px;
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
 }
 
-.card__content h2 {
-	font-size: 20px;
-	color: white;
+.advantages .advantages__box {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 30px;
+	background: #fff;
+	box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
 }
 
-.card__content p {
-	color: #ccc;
+.advantages .advantages__box .imgAdv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	transition-delay: 0s;
+}
+
+.advantages .advantages__box:hover .imgAdv {
+	transform: scale(0);
+	transition-delay: 0.2s;
+}
+
+.advantages .advantages__box .imgAdv img {
+	max-width: 100px;
+}
+
+.advantages .advantages__box .contentAdv {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	transition: 0.5s;
+	background: darkblue;
+	transform: scale(0);
+	transition-delay: 0s;
+}
+
+.advantages .advantages__box:hover .contentAdv {
+	transform: scale(1);
+	transition-delay: 0.2s;
+}
+
+.advantages .advantages__box:nth-child(2) .contentAdv {
+	background: #00008b;
+}
+.advantages .advantages__box:nth-child(3) .contentAdv {
+	background: #00008b;
+}
+
+.advantages .advantages__box .contentAdv .iconAdv img {
+	max-width: 80px;
+	filter: invert(1);
+}
+.advantages .advantages__box .contentAdv .iconAdv h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+
+.advantages .advantages__box .contentAdv .iconAdv h4 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 .price__title {

@@ -216,7 +216,7 @@ section {
 .image1 span {
 	font-size: 30px;
 	position: absolute;
-	color: red;
+	color: rgb(75, 20, 92);
 }
 
 .image1 .link__btn {
