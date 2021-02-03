@@ -356,20 +356,20 @@ header .navigation li a:hover {
 	min-height: 30vh;
 }
 .trPc {
-	border: 3px solid black;
+	border: 3px solid rgb(3, 0, 0);
 }
 .thPc {
 	font-weight: bold;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	padding: 15px 35px;
 	color: gold;
 }
 
 .tdPc {
 	font-weight: bold;
-	background-color: rgb(124, 108, 19);
+	background-color: rgba(202, 173, 6, 0.76);
 	padding: 15px 35px;
-	color: black;
+	color: rgb(0, 0, 0);
 	border-right: 3px solid black;
 	border-bottom: 3px solid black;
 }
@@ -388,15 +388,17 @@ header .navigation li a:hover {
 
 .trMain {
 	font-weight: bold;
-	background-color: #f00a34;
-	padding: 15px 35px;
-	color: #fff;
+	background-color: #000000;
+	padding: 15px 30px;
+	color: gold;
 	border: 3px solid black;
 }
 
 .tr1 {
-	background-color: #ccc;
+	background-color: rgba(202, 173, 6, 0.76);
 	border: 3px solid black;
+	color: black;
+	font-weight: 600;
 }
 
 @media (max-width: 1140px) {
@@ -493,6 +495,10 @@ header .navigation li a:hover {
 
 	.forPhone {
 		display: flex;
+	}
+	.button__number .button__num1 {
+		padding: 6px 16px;
+		font-size: 15px;
 	}
 }
 

@@ -186,15 +186,21 @@ section {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	flex-wrap: wrap;
 }
 
 .image1 {
 	position: relative;
+	top: 20px;
 	display: flex;
 	max-width: 400px;
 	max-height: 450px;
 	overflow: hidden;
 	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
 }
 
 .image1 img {
@@ -205,33 +211,26 @@ section {
 	transform: scale(1.1);
 }
 
-/* .image1 span {
-		position: absolute;
-		top: 2%;
-		left: 2%;
-		left: 24%;
-		font-size: 30px;
-		color: red;
-	} */
 .image1 span {
 	font-size: 30px;
 	position: absolute;
 	color: rgb(75, 20, 92);
+	padding-bottom: 200px;
+	font-weight: 700;
 }
 
 .image1 .link__btn {
 	position: absolute;
-	top: 45%;
-	left: 27%;
 	color: #fff;
 	background: #ff0157;
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 10px 20px;
 	margin-top: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 2px;
 	transition: 0.5s;
+	border-radius: 40px;
 }
 
 .image1 .link__btn:hover {
@@ -244,25 +243,34 @@ section {
 		padding: 3px 20px;
 	}
 
+	.blab {
+		padding-top: 80px;
+		padding-bottom: 20px;
+	}
+
 	.image1 {
-		max-width: 100%;
-		flex-direction: column;
-		margin: 10px 20px;
-		max-width: 300px;
-		max-height: 350px;
+		position: relative;
+		top: 20px;
+		display: flex;
+		max-width: 400px;
+		max-height: 450px;
+		overflow: hidden;
+		margin: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.image1 .link__btn {
 		position: absolute;
-		top: 54%;
-		left: 28%;
-		padding: 7px 10px;
+		padding: 7px 15px;
+		font-size: 15px;
 	}
 	.image1 span {
 		font-size: 25px;
 		position: absolute;
-		top: 2%;
-		left: 2%;
-		color: red;
+		color: rgb(75, 20, 92);
+		font-weight: 700;
+		font-size: 30px;
 	}
 }
 @media (max-width: 991px) {
@@ -273,14 +281,19 @@ section {
 	.blab {
 		display: flex;
 		flex-direction: column;
+		padding: 10px 0px;
 	}
 
 	.image1 {
 		max-width: 100%;
 		flex-direction: column;
-		margin: 10px 20px;
+		margin: 10px 0px;
 		max-width: 350px;
 		max-height: 400px;
+	}
+
+	.image1 span {
+		padding-bottom: 80px;
 	}
 
 	.image1 .link__btn {

@@ -194,6 +194,13 @@ section {
 }
 
 .image1 {
+	/* position: relative;
+	top: 20px;
+	display: flex;
+	max-width: 400px;
+	max-height: 450px;
+	overflow: hidden;
+	margin: 20px; */
 	position: relative;
 	top: 20px;
 	display: flex;
@@ -201,13 +208,18 @@ section {
 	max-height: 450px;
 	overflow: hidden;
 	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
 }
 
 .image1 span {
 	font-size: 30px;
 	position: absolute;
-	color: red;
-	left: 2%;
+	color: rgb(75, 20, 92);
+	padding-bottom: 200px;
+	font-weight: 700;
 }
 
 .image1 img {
@@ -220,8 +232,6 @@ section {
 
 .image1 .link__btn {
 	position: absolute;
-	top: 45%;
-	left: 27%;
 	color: #fff;
 	background: #ff0157;
 	display: inline-block;
@@ -231,6 +241,7 @@ section {
 	text-decoration: none;
 	letter-spacing: 2px;
 	transition: 0.5s;
+	border-radius: 40px;
 }
 
 .image1 a:hover {
@@ -244,27 +255,41 @@ section {
 }
 
 @media (max-width: 1337px) {
+	.blab {
+		padding-top: 80px;
+		padding-bottom: 20px;
+	}
 	.image1 {
-		max-width: 100%;
+		/* max-width: 100%;
 		flex-direction: column;
 		margin: 10px 20px;
 		max-width: 300px;
-		max-height: 350px;
+		max-height: 350px; */
+		position: relative;
+		top: 20px;
+		display: flex;
+		max-width: 400px;
+		max-height: 450px;
+		overflow: hidden;
+		margin: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.image1 .link__btn {
 		position: absolute;
-		top: 54%;
-		left: 28%;
-		padding: 7px 10px;
+		padding: 7px 15px;
+		font-size: 15px;
 	}
 
 	.image1 span {
 		font-size: 25px;
 		position: absolute;
-		top: 2%;
-		left: 2%;
-		color: red;
+		color: rgb(75, 20, 92);
+		font-weight: 700;
+		padding-right: 3px;
+		padding-left: 3px;
 	}
 }
 
@@ -272,21 +297,26 @@ section {
 	.blab {
 		display: flex;
 		flex-direction: column;
-		padding-top: 1px;
+		padding: 10px 0px;
 	}
 
 	.image1 {
 		max-width: 100%;
 		flex-direction: column;
-		margin: 10px 0px;
+		margin: 10px 10px;
 		max-width: 350px;
 		max-height: 400px;
 	}
 
 	.image1 .link__btn {
 		position: absolute;
-		top: 54%;
+		top: 48%;
 		left: 29%;
+	}
+
+	.image1 span {
+		padding-bottom: 139px;
+		font-size: 30px;
 	}
 
 	.image1:nth-child(1) {
