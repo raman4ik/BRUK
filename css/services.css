@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
     font-family: "Poppins", sans-serif;
 }
-
 body {
-    background: black;
+    background: #000;
 }
 
 .logo {
@@ -19,8 +16,11 @@ body {
     background: rgb(133, 144, 3);
 }
 
-/*---------------*/
-/*---Sticky---*/
+p {
+    font-weight: 300;
+    color: #111;
+}
+
 .grad {
     color: #fff;
     background: linear-gradient(300deg, black 50%, gold 50%);
@@ -31,13 +31,29 @@ body {
 .gradD {
     font-size: 20px;
 }
-.header-top {
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0px;
-    padding: 25px 100px;
+    padding: 40px 100px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -45,49 +61,48 @@ body {
     transition: 0.5s;
 }
 
-.header-top.sticky {
+header.sticky {
     background: #fff;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.header-top .logo {
+header .logo {
     color: #fff;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
 
-.header-top.sticky .logo {
+header.sticky .logo {
     color: #111;
 }
 
-.header-top .logo span {
+header .logo span {
     color: #ff0157;
 }
 
-.header-top .navigation {
+header .navigation {
     position: relative;
-    top: 0px;
     display: flex;
 }
 
-.header-top .navigation li {
+header .navigation li {
     list-style: none;
     margin-left: 30px;
 }
 
-.header-top .navigation li a {
+header .navigation li a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
 }
 
-.header-top.sticky .navigation li a {
+header.sticky .navigation li a {
     color: #111;
 }
 
-.header-top .navigation li a:hover {
+header .navigation li a:hover {
     color: red;
 }
 
@@ -99,16 +114,16 @@ body {
     .gradD {
         font-size: 15px;
     }
-    .header-top,
-    .header-top.sticky {
+    header,
+    header.sticky {
         padding: 10px 20px;
     }
 
-    .header-top .navigation {
+    header .navigation {
         display: none;
     }
 
-    .header-top .navigation.active {
+    header .navigation.active {
         width: 100%;
         height: calc(100% - 68px);
         position: fixed;
@@ -121,11 +136,11 @@ body {
         background: #fff;
     }
 
-    .header-top .navigation li {
+    header .navigation li {
         margin-left: 0;
     }
 
-    .header-top .navigation li a {
+    header .navigation li a {
         text-decoration: none;
         color: #111;
         font-size: 1.6em;
@@ -150,7 +165,7 @@ body {
         background-position: center;
     }
 
-    .header-top.sticky .menuToggle {
+    header.sticky .menuToggle {
         filter: invert(1);
     }
 
@@ -281,9 +296,11 @@ body {
     font-size: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    background: #12222d;
+    min-height: 30vh;
 }
 
 .service__info li {
