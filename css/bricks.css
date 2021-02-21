@@ -115,7 +115,7 @@ header .navigation li a:hover {
 		background: rgb(133, 144, 3);
 	}
 	.gradD {
-		font-size: 15px;
+		font-size: 10px;
 	}
 	header,
 	header.sticky {
@@ -485,7 +485,7 @@ header .navigation li a:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 15px;
+		font-size: 22px;
 		margin-top: 30px;
 	}
 

@@ -162,7 +162,7 @@ p {
 		padding: 1px 5px;
 	}
 	.gradD {
-		font-size: 5px;
+		font-size: 10px;
 	}
 	body.lock {
 		overflow: hidden;
@@ -176,9 +176,9 @@ p {
 	}
 	.header-top .navigation.active {
 		width: 100%;
-		height: calc(100% - 68px);
+		height: calc(100% - 70px);
 		position: fixed;
-		top: 68px;
+		top: 70px;
 		left: 0;
 		display: flex;
 		justify-content: center;
