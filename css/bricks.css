@@ -183,6 +183,7 @@ header .navigation li a:hover {
 	padding-top: 120px;
 	padding-right: 10px;
 	padding-left: 10px;
+	min-height: 50vh;
 }
 
 .image-slider {
@@ -201,6 +202,7 @@ header .navigation li a:hover {
 .image-slider__image img {
 	max-width: 100%;
 	border-radius: 10px;
+	min-height: 50vh;
 }
 
 .image-slider .swiper-pagination {
