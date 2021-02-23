@@ -179,58 +179,46 @@ header .navigation li a:hover {
 }
 /* center  */
 
-.image__body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.wrapper {
+	padding-top: 120px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
-.container__image {
-	margin-top: 120px;
-	margin-left: 20px;
-	margin-right: 20px;
-	position: relative;
-	width: 800px;
-	height: 500px;
-	background-image: url(../img/template.webp);
-	background-size: cover;
+.image-slider {
+	padding: 30px 0 70px 0;
+}
+.image-slider__wrapper {
 }
 
-.container__image .clip {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: 0.5s;
+.image-slider__slide {
 }
 
-.container__image .clip.clip1 {
-	background: url(../img/bricks-p2.jpg);
-	background-size: cover;
-	clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+.image-slider__image {
+	text-align: center;
 }
 
-.container__image .clip.clip2 {
-	background: url(../img/bricks.webp);
-	background-size: cover;
-	clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+.image-slider__image img {
+	max-width: 100%;
+	border-radius: 10px;
 }
 
-.container__image .clip.clip3 {
-	background: url(../img/bricks-p3.webp);
-	background-size: cover;
-	clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+.image-slider .swiper-pagination {
+	bottom: 0;
 }
 
-.container__image:hover .clip {
-	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+.image-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 5px;
+	background-color: #fff;
+	outline: none;
 }
 
-.container__image .clip:hover {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
+/*arrow*/
 
+/*---------------------end Slider--------------*/
 .advantages__body {
 	display: flex;
 	justify-content: center;
@@ -331,8 +319,14 @@ header .navigation li a:hover {
 .price__title {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	min-height: 10vh;
 	font-size: 30px;
 	color: white;
+}
+
+.our__serv {
+	padding-top: 30px;
 }
 
 .price__image {
@@ -487,6 +481,10 @@ header .navigation li a:hover {
 		align-items: center;
 		font-size: 22px;
 		margin-top: 30px;
+	}
+
+	.price__tile {
+		font-size: 16px;
 	}
 
 	.forLaptop {
