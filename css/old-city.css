@@ -128,7 +128,7 @@ header .navigation li a:hover {
 
     header .navigation.active {
         width: 100%;
-        height: calc(100% - 68px);
+        height: calc(100% - 80px);
         position: fixed;
         top: 68px;
         left: 0;
@@ -178,6 +178,48 @@ header .navigation li a:hover {
     }
 }
 /* center  */
+.wrapper {
+    padding-top: 120px;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-height: 50vh;
+}
+
+.image-slider {
+    padding: 30px 0 70px 0;
+}
+.image-slider__wrapper {
+}
+
+.image-slider__slide {
+}
+
+.image-slider__image {
+    text-align: center;
+}
+
+.image-slider__image img {
+    max-width: 100%;
+    border-radius: 10px;
+    min-height: 50vh;
+}
+
+.image-slider .swiper-pagination {
+    bottom: 0;
+}
+
+.image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 5px;
+    background-color: #fff;
+    outline: none;
+}
+
+/*arrow*/
+
+/*---------------------end Slider--------------*/
 
 .image__body {
     display: flex;

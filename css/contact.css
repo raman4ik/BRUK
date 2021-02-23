@@ -104,7 +104,7 @@ body {
 
 	.header-top .navigation.active {
 		width: 100%;
-		height: calc(100% - 68px);
+		height: calc(100% - 80px);
 		position: fixed;
 		top: 68px;
 		left: 0;

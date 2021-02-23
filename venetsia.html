@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/venetsia.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -24,14 +25,30 @@
         </ul>
     </header>
 
-    <div class="image__body">
+    <div class="wrapper">
+        <div class="image-slider swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/venetsia-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/venetsia-2.jpg" alt="">
 
-        <div class="container__image">
-            <div class="clip clip1"></div>
-            <div class="clip clip2"></div>
-            <div class="clip clip3"></div>
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/venetsia-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
+
 
     <div class="price__title our__serv">
         <h2>Наші переваги</h2>
@@ -225,8 +242,9 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
