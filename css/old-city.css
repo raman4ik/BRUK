@@ -128,7 +128,7 @@ header .navigation li a:hover {
 
     header .navigation.active {
         width: 100%;
-        height: calc(100% - 80px);
+        height: 100%;
         position: fixed;
         top: 68px;
         left: 0;
@@ -377,6 +377,8 @@ header .navigation li a:hover {
     min-height: 10vh;
     font-size: 30px;
     color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .our__serv {
@@ -422,10 +424,10 @@ header .navigation li a:hover {
     border-bottom: 3px solid black;
 }
 
-.tdPc-img1 img {
+.tdPc img {
     max-width: 150px;
 }
-.tdPc-img2 img {
+.tdPc img {
     max-width: 70px;
 }
 

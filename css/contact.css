@@ -104,7 +104,7 @@ body {
 
 	.header-top .navigation.active {
 		width: 100%;
-		height: calc(100% - 80px);
+		height: 100%;
 		position: fixed;
 		top: 68px;
 		left: 0;
@@ -155,7 +155,7 @@ body {
 }
 
 /* center */
-section {
+main {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -163,31 +163,31 @@ section {
 	min-height: 100vh;
 	padding: 0 100px;
 }
-section img {
+main img {
 	padding: 30px 0;
 }
 
-section .contentBx {
+main .contentBx {
 	position: relative;
 	max-width: 600px;
 	z-index: 1000;
 }
 
-section .contentBx h2 {
+main .contentBx h2 {
 	font-size: 60px;
 	color: #fff;
 	text-transform: uppercase;
 }
-section .contentBx p {
+main .contentBx p {
 	font-size: 18px;
 	color: #fff;
 }
-section .contentBx .countdown {
+main .contentBx .countdown {
 	display: flex;
 	margin: 20px 0;
 }
 
-section .contentBx .countdown .time {
+main .contentBx .countdown .time {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -201,13 +201,13 @@ section .contentBx .countdown .time {
 	border-radius: 4px;
 	color: #ff0083;
 }
-section .contentBx .countdown .time span {
+main .contentBx .countdown .time span {
 	margin-top: -10px;
 	font-size: 20px;
 	font-weight: 600;
 	color: #312747;
 }
-section .imgBx img {
+main .imgBx img {
 	position: relative;
 	max-width: 500px;
 	width: 100%;
@@ -223,36 +223,36 @@ section .imgBx img {
 }
 
 @media (max-width: 991px) {
-	section {
+	main {
 		flex-direction: column;
 		padding-top: 150px;
 		height: auto;
 	}
-	section .contentBx {
+	main .contentBx {
 		max-width: 100%;
 	}
-	section .imgBx img {
+	main .imgBx img {
 		margin-top: 0;
 	}
 }
 @media (max-width: 767px) {
-	section {
+	main {
 		flex-direction: column;
 		padding: 150px 20px 50px;
 		height: auto;
 	}
-	section .contentBx h2 {
+	main .contentBx h2 {
 		font-size: 40px;
 	}
-	section .contentBx p {
+	main .contentBx p {
 		font-size: 16px;
 	}
-	section .contentBx .countdown .time {
+	main .contentBx .countdown .time {
 		font-size: 30px;
 		min-width: 70px;
 		margin-right: 5px;
 	}
-	section .contentBx .countdown .time span {
+	main .contentBx .countdown .time span {
 		font-size: 14px;
 	}
 }
