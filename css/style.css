@@ -21,14 +21,22 @@ p {
 	color: #111;
 }
 
-.grad {
+.header__logo-name {
 	color: #fff;
 	background: linear-gradient(300deg, black 50%, gold 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.gradD {
+
+.content__title {
+	color: #fff;
+	background: linear-gradient(300deg, black 50%, gold 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.header__logo-sub-mame {
 	font-size: 20px;
 }
 .banner {
@@ -110,7 +118,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 40px 100px;
+	padding: 25px 100px;
 	z-index: 10000;
 	display: flex;
 	justify-content: space-between;
@@ -119,7 +127,7 @@ p {
 }
 .header-top.sticky {
 	background: #fff;
-	padding: 10px 100px;
+	padding: 10px 30px;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 .header-top .logo {
@@ -161,7 +169,7 @@ p {
 		background: rgb(133, 144, 3);
 		padding: 1px 5px;
 	}
-	.gradD {
+	.header__logo-sub-mame {
 		font-size: 14px;
 	}
 	body.lock {
